@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 def get_model():
     global model
-    model = load_learner('expo_rt.pkl')
+    model = load_learner('export.pkl')
     print("Model loaded!")
 
 '''
