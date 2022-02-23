@@ -8,12 +8,13 @@ import os
 from PIL import Image
 from fastai import *
 from fastai.vision.data import ImageDataLoaders
+import pickle as pkl
 
 app = Flask(__name__)
 
 def get_model():
     global model
-    model = learner.load('export.pkl','rb')
+    model = pkl.load('export.pkl','rb')
     #load_learner(fname ='export.pkl')
     print("Model loaded!")
 
