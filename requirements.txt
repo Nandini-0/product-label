@@ -6,4 +6,4 @@ flask
 ipywidgets
 gunicorn
 flask-cors
-pickle == 4.0
+pickle == 3.9
