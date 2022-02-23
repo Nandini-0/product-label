@@ -47,7 +47,7 @@ def predict():
         
         file = request.files['file']
         filename = file.filename
-        f_name = "static\"
+        f_name = str("static\")
         file_path = os.path.join(f_name, filename)
         file.save(file_path)
         print(filename)
