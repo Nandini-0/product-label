@@ -4,4 +4,5 @@ torchvision==0.9.1+cpu
 fastai
 flask
 ipywidgets
-gunicorn == 20.1.0
+gunicorn
+flask-cors
