@@ -42,11 +42,10 @@ def home():
 
 @app.route("/predict", methods = ['GET','POST'])
 def predict():
-    f_name = str("static\")
     if request.method == 'POST':
         file = request.files['file']
         filename = file.filename
-        file_path = os.path.join(f_name, filename)
+        file_path = concat("static\"+filename)
         file.save(file_path)
         print(filename)
         product = prediction(file_path)
