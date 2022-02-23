@@ -16,6 +16,7 @@ def get_model():
     global model
     with open('export.pkl','rb') as f:
         model = pkl.load(f)
+        f.close()
     #model = pkl.load()
     #load_learner(fname ='export.pkl')
     print("Model loaded!")
