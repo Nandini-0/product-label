@@ -45,7 +45,7 @@ def predict():
     if request.method == 'POST':
         file = request.files['file']
         filename = file.filename
-        file_path = concat("static\"+filename)
+        file_path = ("static\",filename)
         file.save(file_path)
         print(filename)
         product = prediction(file_path)
