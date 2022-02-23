@@ -14,7 +14,9 @@ app = Flask(__name__)
 
 def get_model():
     global model
-    model = pkl.load('export.pkl')
+    with open('export.pkl','rb') as f:
+        model = pkl.load(f)
+    #model = pkl.load()
     #load_learner(fname ='export.pkl')
     print("Model loaded!")
 
