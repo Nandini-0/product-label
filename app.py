@@ -19,8 +19,8 @@ app = Flask(__name__)
 def get_model():
     global model
     #with open('export.pkl','rb') as f:model = pkl.load(f)f.close()
-    model = pickle.load(open('export.pkl'), 'rb')
-    #model = load_learner(fname ='export.pkl')
+    #model = pickle.load(open('export.pkl'), 'rb')
+    model = load_learner(fname ='export.pkl')
     print("Model loaded!")
 
 '''
