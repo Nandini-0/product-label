@@ -42,6 +42,8 @@ def load_image(img_path):
 def prediction(img_path):
     #new_image = load_image(img_path)
     pred = model.predict(img_path)
+    if pred[0] == 'Outwear':
+        return('Outerwear')
     
     return(pred[0])
 
