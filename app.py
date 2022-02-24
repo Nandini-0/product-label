@@ -9,6 +9,10 @@ from PIL import Image
 from fastai import *
 from fastai.vision.data import ImageDataLoaders
 import pickle
+import pathlib
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+
 
 app = Flask(__name__)
 
